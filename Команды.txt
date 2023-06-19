@@ -1,4 +1,4 @@
 docker build .                                                                        (сборка образа)
 docker run --rm -d -p 5432:5432 --name test_postgres (код образа)                     (запуск контейнера на основе образа)
 docker exec -it (Код процесса контейнера) bash                                        (Подключение к работающему контейнеру)
-/var/lib/docker/volumes/название volumes/_data                                        (путь до своего volume)
+psql -U<USERNAME> -h<HOSTNAME> -d<DB_NAME>                                            (Подключение к интерфейсу psql)
